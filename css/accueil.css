@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../images/IMG_20250424_112616_942.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(99, 90, 90);
+    
+}
+
+.contenaire-logo{
+    padding: 3%;
+    display: flex;
+    text-align: center;
+
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+
+    
+}
+
+ .nav-bar ul{
+    display: flex;
+    gap: 60px;
+    list-style: none;   
+    font-family: Georgia, 'Times New Roman', Times, serif;  
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: rgb(243, 233, 233);
+}
+
+.body-acceuil{
+  background-color: rgb(37, 126, 126);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    
+}
+.pp {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.contenaire-historique{
+    padding: 30px;
+    width: 80%;
+    text-align: center;
+    
+}
+.actualité{
+    padding: 50px;
+    background-color: #aa8484;
+    text-align: center;
+}
+.actualité h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.top-produits{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 90px;
+}
+.produit{
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #000000;
+    border-radius: 80px;
+    padding: 10px;
+}
+.produit img{
+    width: 200% ;
+    display:flex;
+    border-radius: 700px;
+    background-position: center;
+    height: auto;
+    border-radius: 50px;
+}
+.produit p{
+    margin: 10px;
+    font-size: 16px;
+}
+.produit button{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.produit button:hover{
+    background-color: #000000;
+}
+.button-vers-produits{
+    margin-top: 30px;
+}
+.button-vers-produits a{
+    display:flex;
+    background-color: #474e49;
+    color: white;
+    padding: 10px 10px ;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: backgroud-color0.3s;
+    justify-content: center;
+}
+.button-vers-produits a:hover{
+    background-color: #010202;
+}

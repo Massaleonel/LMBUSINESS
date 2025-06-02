@@ -1,0 +1,64 @@
+body{
+    background: #a17e7e;
+    height: 190px;
+    width: 400px;;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.caert-container{
+    max-width: 700px;
+    margin: auto;
+    background: rgba(88, 17, 17, 0);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align: center;
+    color: #333;
+}
+
+.cart-items{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ece8e8;
+    padding-bottom: 10px;
+}
+
+.cart-item img{
+    width: 90px;
+    border-radius: 60px;
+    margin-right: 15px;
+}
+
+.item-details{
+    flex: 1;
+}
+
+.item-details h2{
+    margin: 0;
+    font-size: 30px;
+    color: #240f0f;
+}
+
+.item-details p{
+    margin: 15px 0;
+}
+
+.quantity{
+    width: 90px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.cart-summary{
+    text-align: right;
+    font-size: 18px;
+    font-weight:bold;
+    color: #000000;
+    margin-top: 20px;
+}

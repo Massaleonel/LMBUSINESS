@@ -1,0 +1,34 @@
+body{
+    background-image:url(../images/veste\ 6.jpg);
+    background-attachment: fixed;
+}
+
+.gallerie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.produit{
+    text-align: center;
+    width: 250px;
+    border: 1px solid #991e1e;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 5px rgba(0,0,0,1);
+}
+
+.produit img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.produit p{
+    font-weight: bold;
+    color: #333;
+}

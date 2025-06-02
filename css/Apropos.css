@@ -1,0 +1,69 @@
+body{
+    font-family: 'segoe UI',Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #888;
+}
+
+.apropos-container{
+    max-width: 700px;
+    margin: 40px auto;
+    background: #e6dada;
+    border-radius: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    padding: 32px;
+    text-align: center;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+
+    
+}
+
+ .nav-bar ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;     
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: rgb(7, 2, 2);
+}
+
+.apropos-image{
+    width: 80px;
+    max-width: 330;
+    border-radius: 10px;
+    margin: 24px 0;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+h1{
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+.apropos-info{
+    margin-top: 30px;
+    text-align: left;
+}
+
+.apropos-info h2{
+    color: #457b9d;
+    margin-bottom: 8px;
+}
+
+.apropos-info ul{
+    list-style: disc inside;
+    margin: 0;
+    padding: 0 0 0 16px;
+    color: #222;
+}
+
+footer{
+    margin-top: 40px;
+    font-size: 0.95em;
+    color:#888;
+}
