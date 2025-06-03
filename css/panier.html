@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title><em>Kassil shop</em></title>
+    <link rel="stylesheet" href="styles/product.css">
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://unpkg.com/cardscan@latest/dist/cardscan.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>kassil shop</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="boutique.html">Produits</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Votre panier</h2>
+        <div id="cart-list">
+            <!-- Les articles du panier seront chargés dynamiquement ici  -->
+        </div>
+        <div>
+            <button id="mobile-money-button">Payer avec Mobile Money</button>
+            <button id="card-button">Payer avec carte</button>
+            <button id="scan-card-button">Scanner la carte</button>
+        </div>
+        <div>
+            <button id="place-order-button" method="post">Passer la commande</button>
+        </div>
+        <div id="card-element"></div>
+    </main>
+    <script src="/api/auth/js/panier.js"></script>
+
+</body>
+
+</html>

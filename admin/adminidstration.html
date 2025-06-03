@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smith Collection - Administration</title>
+    <link rel="stylesheet" href="styles/admin.css">
+</head>
+<body>
+    <header class="admin-header">
+        <h1>Tableau de bord - Administration</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="logout.html" onclick="logout()">Déconnexion</a>
+        </nav>
+    </header>
+    <main>
+        <section class="admin-section">
+            <h2>Ajouter un produit</h2>
+            <form id="addProductForm">
+                <label for="productName">Nom du produit :</label>
+                <input type="text" id="productName" required>
+                <label for="productPrice">Prix :</label>
+                <input type="number" id="productPrice" required>
+                <label for="productDescription">Description :</label>
+                <textarea id="productDescription" rows="3" required></textarea>
+                <label for="productImage">Image :</label>
+                <input type="file" id="productImage" accept="image/*" required>
+                <button type="submit">Ajouter</button>
+            </form>
+        </section>
+        <section class="admin-section">
+            <h2>Produits disponibles</h2>
+            <ul id="productList">
+                <!-- Les produits seront chargés ici dynamiquement -->
+            </ul>
+        </section>
+        <section class="admin-section">
+            <h2>Commandes en attente</h2>
+            <ul id="orderList">
+                <!-- Les commandes seront chargées ici dynamiquement -->
+                <li>
+                    <span>Commande #1 - Client : John Doe - Total : 150€</span>
+                    <button onclick="confirmOrder(1)">Confirmer</button>
+                    <button onclick="expireOrder(1)">Expirer</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Tous droits réservés 2025</p>
+    </footer>
+    <script src="admin.js"></script>
+</body>
+</html>

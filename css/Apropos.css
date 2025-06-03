@@ -2,34 +2,36 @@ body{
     font-family: 'segoe UI',Arial,sans-serif;
     margin: 0;
     padding: 0;
-    background: #888;
+    background-image: url(/images/ma\ photo\ 2.jpg);
+    background-attachment: fixed;
 }
 
 .apropos-container{
-    max-width: 700px;
+    max-width: 800px;
     margin: 40px auto;
-    background: #e6dada;
-    border-radius: 30px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    background: lab(73.71% 4.99 1.79);
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
     padding: 32px;
     text-align: center;
 }
-.nav-bar{
+.Apropos{
     display: flex;
-    align-items: center;
-
+    color: white;
     
 }
 
- .nav-bar ul{
+ .Apropos ul{
     display: flex;
-    gap: 40px;
-    list-style: none;     
+    gap: 45px;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;     
 }
-
 .nav-bar ul li a{
     text-decoration: none;
-    color: rgb(7, 2, 2);
+    color: rgb(199, 156, 156);
+    text-align: center;
 }
 
 .apropos-image{
@@ -41,7 +43,7 @@ body{
 }
 
 h1{
-    color: #343a40;
+    color: #102841;
     margin-bottom: 10px;
 }
 
@@ -51,7 +53,7 @@ h1{
 }
 
 .apropos-info h2{
-    color: #457b9d;
+    color: #162935;
     margin-bottom: 8px;
 }
 
@@ -59,11 +61,11 @@ h1{
     list-style: disc inside;
     margin: 0;
     padding: 0 0 0 16px;
-    color: #222;
+    color: #000000;
 }
 
 footer{
     margin-top: 40px;
     font-size: 0.95em;
-    color:#888;
+    color:#070101;
 }
