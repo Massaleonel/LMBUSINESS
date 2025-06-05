@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <a href="/html/panier.html">Paier(<span id="compteur">0</span>)</a>
 
     <header class="header">
         <h1 class="LM BUSNESS">NOUS VOUS PROPOSONS</h1>
@@ -21,8 +22,7 @@
         <div class="produit">
             <img src="../images/4 poches.jpg" alt="4 poches">
             <p>4 poches complet 50$</p>
-            <button class="add" data-name="4 poches complet" data-image="../images/4 poches.jpg" data-price="50$"
-                type="button">ajouter au panier</button>
+            <button onclick="AjouterAuPanier('4 poches complet')">Ajouter au panier </button>
         </div>
         <div class="produit">
             <img src="../images/4 poches 5.jpg" alt="chemise">
@@ -228,32 +228,27 @@
             <button class="add" data-name="basquette" data-image="../images/basket 4.jpg" data-price="25$"
                 type="button">Ajouter au panier</button>
         </div>
-
-
-        <div class="cart-overlay">
-            <div class="cart">
-                <span class="close-cart"><i class="fas fa-times"></i></span>
-                <h2>Votre Panier</h2>
-                <div class="cart-content">
-                    <!-- Les articles du panier seront ajoutés ici dynamiquement -->
-
-                    <!-- <script>
-                    cartItem.innerHTML =
-
-                        cartContent.appendChild(cartItem);
-                </script> -->
-
-                </div>
-                <div class="cart-total">
-                    <span>Total : </span>
-                    <span class="cart-total-amount">0$</span>
-                </div>
-                <button class="checkout-btn">Passer la commande</button>
-            </div>
-        </div>
-        <script src="/Js.js"></script>
     </section>
+    !-- Script pour le panier -->
+  <script>
+    function ajouterAuPanier(nomProduit) {
+      let panier = JSON.parse(localStorage.getItem('panier')) || [];
+      panier.push(nomProduit);
+      localStorage.setItem('panier', JSON.stringify(panier));
+      mettreAJourCompteur();
+    }
 
+    function mettreAJourCompteur() {
+      const panier = JSON.parse(localStorage.getItem('panier')) || [];
+      const compteur = document.getElementById('compteur');
+      if (compteur) {
+        compteur.textContent = panier.length;
+      }
+    }
+
+    // Met à jour le compteur au chargement de la page
+    window.onload = mettreAJourCompteur;
+  </script>
     <footer class="footer">
         <p>&copy;2025 Ma Boutique-Tous droits réservés</p> Facebook <br> Whatsapp <br> Instagram <br>
     </footer>

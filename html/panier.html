@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Panier</title>
+  <link rel="stylesheet" href="/css/panier.css">
+</head>
+<body>
+  <ul id="liste-panier"></ul>
+  <p>Total d'articles : <span id="compteur">0</span></p>
+  <a href="/html/produit.html">Retour aux produits</a>
+  <a href="/html/panier.html"></a>
+<!DOCTYPE html>
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title><em>LM BUSNESS</em></title>
-    <link rel="stylesheet" href="/css/panier.css">
+    <link rel="stylesheet" href="/css/style.css">
     <script src="https://js.stripe.com/v3/"></script>
     <script src="https://unpkg.com/cardscan@latest/dist/cardscan.min.js"></script>
 </head>
-
 <body>
-    <header>
-        <h1>LM BUSNESS</h1>
-    </header>
     <main>
-        <h2>Votre panier</h2>
         <div id="cart-list">
             <!-- Les articles du panier seront chargés dynamiquement ici  -->
         </div>
@@ -33,4 +40,6 @@
 
 </body>
 
+</html>
+</body>
 </html>
