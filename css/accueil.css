@@ -11,7 +11,7 @@ body{
 header{
     display: flex;
     justify-content: space-around;
-    background-color: rgb(99, 90, 90);
+    background-color: rgb(143, 77, 77);
     
 }
 
@@ -19,6 +19,7 @@ header{
     padding: 3%;
     display: flex;
     text-align: center;
+    background-size: cover;
 
 }
 
@@ -42,8 +43,9 @@ header{
 }
 
 .body-acceuil{
-  background-color: rgb(37, 126, 126);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  background-color: rgb(134, 119, 98);
 
     
 }
@@ -54,13 +56,15 @@ header{
 }
 .contenaire-historique{
     padding: 30px;
+    margin: 30px;
     width: 80%;
     text-align: center;
+    color: #000000;
     
 }
 .actualité{
     padding: 50px;
-    background-color: #aa8484;
+    background-color: #050101;
     text-align: center;
 }
 .actualité h2{
@@ -75,10 +79,11 @@ header{
 }
 .produit{
     width: 200px;
-    background-color: #fff;
+    background-color: #816363;
     border: 1px solid #000000;
     border-radius: 80px;
     padding: 10px;
+    margin: 10px;
 }
 .produit img{
     width: 200% ;
@@ -89,19 +94,19 @@ header{
     border-radius: 50px;
 }
 .produit p{
-    margin: 10px;
-    font-size: 16px;
+    margin: 15px;
+    font-size: 15px;
 }
 .produit button{
-    background-color: #007bff;
-    color: white;
+    background-color: #04070a;
+    color: rgb(235, 194, 194);
     border: none;
     padding: 8px 12px;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
 }
 .produit button:hover{
-    background-color: #000000;
+    background-color: #9e3535;
 }
 .button-vers-produits{
     margin-top: 30px;
@@ -118,5 +123,5 @@ header{
     justify-content: center;
 }
 .button-vers-produits a:hover{
-    background-color: #010202;
+    background-color: #000000;
 }

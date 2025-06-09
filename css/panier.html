@@ -1,36 +1,55 @@
-<!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title><em>LM BUSNESS</em></title>
-    <link rel="stylesheet" href="/css/panier.css">
-    <script src="https://js.stripe.com/v3/"></script>
-    <script src="https://unpkg.com/cardscan@latest/dist/cardscan.min.js"></script>
+    <title>Mon Panier</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
 </head>
-
 <body>
-    <header>
-        <h1>LM BUSNESS</h1>
-    </header>
-    <main>
-        <h2>Votre panier</h2>
-        <div id="cart-list">
-            <!-- Les articles du panier seront chargés dynamiquement ici  -->
-        </div>
-        <div>
-            <button id="mobile-money-button">Payer avec Mobile Money</button>
-            <button id="card-button">Payer avec carte</button>
-            <button id="scan-card-button">Scanner la carte</button>
-        </div>
-        <div>
-            <button id="place-order-button" method="post">Passer la commande</button>
-        </div>
-        <div id="card-element"></div>
-    </main>
-    <script src="/api/auth/js/panier.js"></script>
+    <h1>Votre panier</h1>
+    <div class="cart-content"></div>
+    <div class="cart-total">Total : <span class="cart-total-amount">0.00€</span></div>
+    <button class="btn-order" id="place-order-button">Passer la commande</button>
+    <span style="display:none" class="cart-count"></span>
+    <script src="../script/panier.js"></script>
 
+    function renderCart() {
+    const cartList = document.getElementById('cart-list');
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cartList.innerHTML =;
+    let total = 0;
+
+    if (cart.length === 0) {
+        cartList.innerHTML = '<p>Votre panier est vide.</p>';
+        return;
+    }
+
+    cart.forEach((item, idx) => {
+        total += item.price * item.quantity;
+        const div = document.createElement('div');
+        div.innerHTML = `
+            <img src="${item.image}" alt="${item.name}" style="width:60px;height:60px;vertical-align:middle;">
+            <span><b>${item.name}</b> - ${item.price}€ x ${item.quantity}</span>
+            <button onclick="removeItem(${idx})">Supprimer</button>
+        `;
+        cartList.appendChild(div);
+    });
+
+    const totalDiv = document.createElement('div');
+    totalDiv.style.marginTop = '20px';
+    totalDiv.innerHTML = <b>Total : ${total.toFixed(2)} €</b>`;
+    cartList.appendChild(totalDiv);
+}
+
+// Supprimer un article
+function removeItem(idx) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.splice(idx, 1);
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+// Passer la commande
+</script>
+<!-- ...existing code... -->
 </body>
-
 </html>
