@@ -1,7 +1,10 @@
 body{
     background-image:url(../images/veste\ 6.jpg);
     background-attachment: fixed;
-}
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}      
 
 .gallerie{
     display: flex;
@@ -14,11 +17,12 @@ body{
 .produit{
     text-align: center;
     width: 250px;
-    border: 1px solid #991e1e;
+    border: 1px solid #000000;
     padding: 15px;
     border-radius: 8px;
-    background-color: #fafafa;
+    background-color: #bb9191;
     box-shadow: 0 2px 5px rgba(0,0,0,1);
+
 }
 
 .produit img{
@@ -31,4 +35,8 @@ body{
 .produit p{
     font-weight: bold;
     color: #333;
+}
+.produit button{
+    background-color: rgb(155, 136, 136);
+    cursor: pointer;
 }
