@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background-image: url(../images/IMG_20250424_112616_942.jpg);
+    background-image: url(../images/Arriere\ plan.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -78,7 +78,7 @@ header{
     gap: 90px;
 }
 .produit{
-    width: 200px;
+    width: 220px;
     background-color: #816363;
     border: 1px solid #000000;
     border-radius: 80px;
