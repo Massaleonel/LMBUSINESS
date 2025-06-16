@@ -97,7 +97,7 @@ function updateCart() {
         cartContent.appendChild(cartItem);
     });
 
-    cartTotal.textContent = `${total.toFixed(2)}€`;
+    cartTotal.textContent = `${total.toFixed(2)}$`;
     cartCount.textContent = count;
 
     saveCartToLocalStorage();
